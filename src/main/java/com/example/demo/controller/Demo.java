@@ -11,4 +11,7 @@ public interface Demo {
 
     @GetMapping("/getAllPosts")
     List<PostsModel> getAllPosts();
+
+    @GetMapping("/errorMessage")
+    String sendErrorMessage() throws Exception;
 }

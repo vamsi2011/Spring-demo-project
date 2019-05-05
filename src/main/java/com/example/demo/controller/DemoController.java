@@ -24,4 +24,17 @@ public class DemoController implements Demo {
 
         return demoService.getAllPosts();
     }
+
+    @Override
+    public String sendErrorMessage() throws Exception {
+
+        if( 1 == 1) {
+            throw new Exception();
+        }
+
+
+        return null;
+
+
+    }
 }
